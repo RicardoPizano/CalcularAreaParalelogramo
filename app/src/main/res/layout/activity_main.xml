@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.claresti.calcularareaparalelogramo.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/l_punto1">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Punto 1"
+                android:textSize="20sp"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="10dp"
+                android:textColor="#000"
+                android:id="@+id/txt_punto1"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="x = "
+                android:layout_below="@id/txt_punto1"
+                android:textSize="20sp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="10dp"
+                android:textColor="#000"
+                android:id="@+id/txt_x1"/>
+
+            <EditText
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txt_punto1"
+                android:layout_toRightOf="@id/txt_x1"
+                android:layout_marginTop="10dp"
+                android:inputType="numberSigned"
+                android:id="@+id/x1"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="y = "
+                android:layout_below="@id/txt_punto1"
+                android:textSize="20sp"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="10dp"
+                android:layout_toRightOf="@id/x1"
+                android:layout_marginLeft="20dp"
+                android:textColor="#000"
+                android:id="@+id/txt_y1"/>
+
+            <EditText
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txt_punto1"
+                android:layout_toRightOf="@id/txt_y1"
+                android:layout_marginTop="10dp"
+                android:inputType="numberSigned"
+                android:id="@+id/y1"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="z = "
+                android:layout_below="@id/txt_punto1"
+                android:textSize="20sp"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="10dp"
+                android:layout_toRightOf="@id/y1"
+                android:textColor="#000"
+                android:id="@+id/txt_z1"
+                android:layout_marginLeft="20dp"/>
+
+            <EditText
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txt_punto1"
+                android:layout_toRightOf="@id/txt_z1"
+                android:layout_marginTop="10dp"
+                android:inputType="numberSigned"
+                android:id="@+id/z1"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/l_punto1"
+            android:layout_marginTop="20dp"
+            android:id="@+id/l_punto2">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Punto 2"
+                android:textSize="20sp"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="10dp"
+                android:textColor="#000"
+                android:id="@+id/txt_punto2"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="x = "
+                android:layout_marginLeft="30dp"
+                android:layout_below="@id/txt_punto2"
+                android:textSize="20sp"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="10dp"
+                android:textColor="#000"
+                android:id="@+id/txt_x2"/>
+
+            <EditText
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txt_punto2"
+                android:layout_toRightOf="@id/txt_x2"
+                android:layout_marginTop="10dp"
+                android:inputType="numberSigned"
+                android:id="@+id/x2"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="y = "
+                android:layout_below="@id/txt_punto2"
+                android:textSize="20sp"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="10dp"
+                android:layout_toRightOf="@id/x2"
+                android:layout_marginLeft="20dp"
+                android:textColor="#000"
+                android:id="@+id/txt_y2"/>
+
+            <EditText
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txt_punto2"
+                android:layout_toRightOf="@id/txt_y2"
+                android:layout_marginTop="10dp"
+                android:inputType="numberSigned"
+                android:id="@+id/y2"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="z = "
+                android:layout_below="@id/txt_punto2"
+                android:textSize="20sp"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="10dp"
+                android:layout_toRightOf="@id/y2"
+                android:textColor="#000"
+                android:id="@+id/txt_z2"
+                android:layout_marginLeft="20dp"/>
+
+            <EditText
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txt_punto2"
+                android:layout_toRightOf="@id/txt_z2"
+                android:layout_marginTop="10dp"
+                android:inputType="numberSigned"
+                android:id="@+id/z2"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/l_punto2"
+            android:layout_marginTop="20dp"
+            android:id="@+id/l_punto3">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Punto 3"
+                android:textSize="20sp"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="10dp"
+                android:textColor="#000"
+                android:id="@+id/txt_punto3"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="x = "
+                android:layout_marginLeft="30dp"
+                android:layout_below="@id/txt_punto3"
+                android:textSize="20sp"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="10dp"
+                android:textColor="#000"
+                android:id="@+id/txt_x3"/>
+
+            <EditText
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txt_punto3"
+                android:layout_toRightOf="@id/txt_x3"
+                android:layout_marginTop="10dp"
+                android:inputType="numberSigned"
+                android:id="@+id/x3"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="y = "
+                android:layout_below="@id/txt_punto3"
+                android:textSize="20sp"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="10dp"
+                android:layout_toRightOf="@id/x3"
+                android:layout_marginLeft="20dp"
+                android:textColor="#000"
+                android:id="@+id/txt_y3"/>
+
+            <EditText
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txt_punto3"
+                android:layout_toRightOf="@id/txt_y3"
+                android:layout_marginTop="10dp"
+                android:inputType="numberSigned"
+                android:id="@+id/y3"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="z = "
+                android:layout_below="@id/txt_punto3"
+                android:textSize="20sp"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="10dp"
+                android:layout_toRightOf="@id/y3"
+                android:textColor="#000"
+                android:id="@+id/txt_z3"
+                android:layout_marginLeft="20dp"/>
+
+            <EditText
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txt_punto3"
+                android:layout_toRightOf="@id/txt_z3"
+                android:layout_marginTop="10dp"
+                android:inputType="numberSigned"
+                android:id="@+id/z3"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/l_punto3"
+            android:layout_marginTop="10dp"
+            android:id="@+id/l_calcular">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="calcular"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:id="@+id/btn_calcular"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/btn_calcular"
+                android:text="CALCULANDO..."
+                android:layout_marginTop="20dp"
+                android:textColor="#000"
+                android:layout_marginLeft="20dp"
+                android:id="@+id/txt_calculando"
+                android:visibility="invisible"/>
+
+            <ProgressBar
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_below="@id/txt_calculando"
+                android:layout_marginTop="10dp"
+                android:id="@+id/bar"
+                android:max="100"
+                android:progress="0"
+                android:progressDrawable="@drawable/stilo_bar"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                android:visibility="invisible"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/l_calcular"
+            android:id="@+id/l_resultado"
+            android:layout_marginBottom="20dp"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="10dp"
+                android:textSize="25sp"
+                android:text="El resultado es:"
+                android:id="@+id/txt_resultadoEs"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="vector PQ = "
+                android:layout_marginLeft="15dp"
+                android:layout_below="@id/txt_resultadoEs"
+                android:textSize="15sp"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="10dp"
+                android:textColor="#000"
+                android:id="@+id/pq"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Vector PR =  "
+                android:layout_marginLeft="15dp"
+                android:layout_below="@id/pq"
+                android:textSize="15sp"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="10dp"
+                android:textColor="#000"
+                android:id="@+id/pr"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Area no exacta =  "
+                android:layout_marginLeft="15dp"
+                android:layout_below="@id/pr"
+                android:textSize="15sp"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="10dp"
+                android:textColor="#000"
+                android:id="@+id/areaNoEx"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Area no exacta =  "
+                android:layout_marginLeft="15dp"
+                android:layout_below="@id/areaNoEx"
+                android:textSize="15sp"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="10dp"
+                android:textColor="#000"
+                android:id="@+id/areaEx"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Area no exacta =  "
+                android:layout_marginLeft="15dp"
+                android:layout_below="@id/areaEx"
+                android:textSize="15sp"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="10dp"
+                android:textColor="#000"
+                android:id="@+id/diferenciaArea"/>
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</ScrollView>
